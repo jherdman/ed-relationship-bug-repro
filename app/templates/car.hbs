@@ -1,0 +1,9 @@
+<h1>{{@model.brand}} | {{@model.model}}</h1>
+
+<ul>
+  {{#each @model.colours as |colour|}}
+    <li>{{colour.name}}</li>
+  {{/each}}
+</ul>
+
+<LinkTo @route="cars">Back</LinkTo>

@@ -1,0 +1,9 @@
+<h1>Inventory</h1>
+
+<ul>
+  {{#each @model as |car|}}
+    <li>
+      <LinkTo @route="car" @model={{car}}>{{car.brand}} | {{car.model}}</LinkTo>
+    </li>
+  {{/each}}
+</ul>
