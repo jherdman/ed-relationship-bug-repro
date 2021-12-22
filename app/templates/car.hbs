@@ -3,6 +3,8 @@
 <ul>
   {{#each @model.colours as |colour|}}
     <li>{{colour.name}}</li>
+  {{else}}
+    <li class="highlight">BUG! You should see the associated colours here.</li>
   {{/each}}
 </ul>
 
